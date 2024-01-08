@@ -1,7 +1,6 @@
 <h2 style="text-align: center">  
   <b>Linguagens De Programação I </b> 
-    <b>(2024.1)</b>
-
+    <b>(2024.1)</b> 
 :octocat:
 </h2>
 
@@ -30,9 +29,7 @@ Para isso, o repositório armazenará os códigos dos exercícios resolvidos em 
 
 ---
 
-<h3> 
-    <b>Contatos</b> :neckbeard:
-</h3>
+<h3> <b>Contatos</b></h3> :neckbeard:
 <ul>
   <li>Prof. Maurício Moreira Neto</li>
   <li><a href="http://lattes.cnpq.br/7534400645876830">Lattes</a></li>
