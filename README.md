@@ -11,7 +11,7 @@ Para isso, o repositório armazenará os códigos dos exercícios resolvidos em 
 ---
 
 <h3>
-  <b>Recomendações</b>:warning:
+  <b>Recomendações</b> :warning:
 </h3>
     
     1. Clone o repositório para acompanhá-lo.
@@ -22,7 +22,7 @@ Para isso, o repositório armazenará os códigos dos exercícios resolvidos em 
 ---
 
 <h3>
-    <b>Demais Canais</b>:loudspeaker:
+    <b>Demais Canais</b> :loudspeaker:
 </h3>
 <ul>
     <li><a href="https://profmauricioneto.notion.site/b4064e88f57a4765bc31c4cfef4dbe4b?v=dc614532c096467d917d7d3a6383d972&pvs=74">Site no notion</a></li>
