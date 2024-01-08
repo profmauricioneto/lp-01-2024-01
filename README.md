@@ -1,5 +1,7 @@
-<h2>  
-  <b>Linguagens De Programação I (2024.1)</b> :octocat:
+<h2 style="text-align: center">  
+  <b>Linguagens De Programação I </b> 
+    <b>(2024.1)</b> 
+:octocat:
 </h2>
 
 Este repositório tem o objetivo de auxiliar os alunos da disciplina de Linguagens de Programação I da Unichristus.
