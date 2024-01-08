@@ -1,7 +1,7 @@
 <h2 style="text-align: center">  
-  <b>Linguagens De Programação I </b> 
-    <b>(2024.1)</b> 
-:octocat:
+  <b>Linguagens De Programação I </b> <br/>
+    <b> (2024.1) </b> <br/> 
+        :octocat:
 </h2>
 
 Este repositório tem o objetivo de auxiliar os alunos da disciplina de Linguagens de Programação I da Unichristus.
@@ -29,7 +29,9 @@ Para isso, o repositório armazenará os códigos dos exercícios resolvidos em 
 
 ---
 
-<h3> <b>Contatos</b></h3> :neckbeard:
+<h3>
+    <b>Contatos</b> :neckbeard:
+</h3> 
 <ul>
   <li>Prof. Maurício Moreira Neto</li>
   <li><a href="http://lattes.cnpq.br/7534400645876830">Lattes</a></li>
