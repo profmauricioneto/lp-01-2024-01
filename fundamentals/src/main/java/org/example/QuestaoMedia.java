@@ -1,5 +1,11 @@
 package org.example;
 
+/**
+ * Faça um programa para calcular a média aritmética M entre duas notas de um aluno e
+ * mostrar sua situação, que pode ser Aprovado (M ⩾ 7), Reprovado (M < 4) e Final (4 ⩽ M < 7).
+ * Se o aluno ficar de Final, entre com a nota da prova Final e mostre a média e o resultado final.
+ * */
+
 import java.util.Scanner;
 
 public class QuestaoMedia {

@@ -1,6 +1,10 @@
 package org.example;
 
-import java.util.Locale;
+/**
+ * Faça um programa que receba a altura e o sexo de uma pessoa. Calcule e mostre seu peso ideal utilizando as seguintes fórmulas:
+ *  - Homens: (72.7 * altura) - 58
+ *  - Mulheres: (62.1 * altura) - 44.7
+ * */
 import java.util.Scanner;
 
 public class PesoIdeal {
