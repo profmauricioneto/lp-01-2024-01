@@ -21,22 +21,31 @@ public class PesoIdeal {
         genero = scan.next();
 
         genero = genero.toLowerCase();
+        char index = genero.charAt(0);
 
-        switch (genero) {
-            case "m":
-            case "masculino": {
-                pesoIdeal = 72.7 * altura - 58;
-                break;
-            }
-            case "f":
-            case "feminino": {
-                pesoIdeal = 62.1 * altura - 44.7;
-                break;
-            }
-
-            default:
-                System.out.println("Genero Invalido.");
+        if (genero.equals("masculino") || index == 'm' || genero.contains("masculino")) {
+            pesoIdeal = 72.7 * altura - 58;
+        } else if (genero.equals("feminino") || index == 'f' ||  genero.contains("feminino")) {
+            pesoIdeal = 62.1 * altura - 44.7;
+        } else {
+            System.out.println("Genero Invalido.");
         }
+
+//        switch (genero) {
+//            case "m":
+//            case "masculino": {
+//                pesoIdeal = 72.7 * altura - 58;
+//                break;
+//            }
+//            case "f":
+//            case "feminino": {
+//                pesoIdeal = 62.1 * altura - 44.7;
+//                break;
+//            }
+//
+//            default:
+//                System.out.println("Genero Invalido.");
+//        }
 
         System.out.println("Valor do Peso Ideal é: " + pesoIdeal);
         scan.close();
