@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/cryptographyword/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cryptographyword/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/filemanipulationjson/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/filemanipulationjson/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fundamentals/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fundamentals/src/main/resources" charset="UTF-8" />
   </component>

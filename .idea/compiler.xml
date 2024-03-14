@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="fundamentals" />
         <module name="cryptographyword" />
+        <module name="filemanipulationjson" />
       </profile>
     </annotationProcessing>
   </component>
