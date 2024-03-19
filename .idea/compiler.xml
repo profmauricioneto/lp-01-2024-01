@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="fundamentals" />
+        <module name="gui" />
         <module name="cryptographyword" />
         <module name="filemanipulationjson" />
       </profile>
