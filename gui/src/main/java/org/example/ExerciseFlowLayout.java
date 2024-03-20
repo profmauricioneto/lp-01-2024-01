@@ -50,13 +50,6 @@ public class ExerciseFlowLayout {
         frame.add(panelIdade);
         frame.add(panelOutput);
 
-//        frame.add(lbNome);
-//        frame.add(tfNome);
-//        frame.add(lbIdade);
-//        frame.add(tfIdade);
-//        frame.add(btnEnviar);
-//        frame.add(lbResultado);
-
         frame.setSize(600, 400);
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
