@@ -7,6 +7,7 @@ import java.awt.event.ActionListener;
 import java.util.Calendar;
 
 public class GridLayoutExample {
+
     public static void main(String[] args) {
         JFrame frame = new JFrame("Example GridLayout");
         JPanel panelSup = new JPanel();
@@ -31,18 +32,39 @@ public class GridLayoutExample {
         frame.add(panelSup);
         frame.add(panelInf);
 
-        btnCalcular.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-               int anoNascimento = Integer.parseInt(tfIdade.getText());
-               int anoAtual = Calendar.getInstance().get(Calendar.YEAR);
-               int idade = anoAtual - anoNascimento;
-               lbResultado.setText("Sua idade é: "+ idade);
-            }
-        });
+        CalcIdade calculoIdade = new CalcIdade(tfIdade, lbResultado);
+        btnCalcular.addActionListener(calculoIdade);
+
+//        btnCalcular.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//               int anoNascimento = Integer.parseInt(tfIdade.getText());
+//               int anoAtual = Calendar.getInstance().get(Calendar.YEAR);
+//               int idade = anoAtual - anoNascimento;
+//               lbResultado.setText("Sua idade é: "+ idade);
+//            }
+//        });
 
         frame.setSize(400, 400);
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+
+    private static class CalcIdade implements ActionListener {
+        private final JTextField tfIdade;
+        private final JLabel lbResultado;
+
+        private CalcIdade(JTextField tfIdade, JLabel lbResultado) {
+            this.tfIdade = tfIdade;
+            this.lbResultado = lbResultado;
+        }
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            int anoNascimento = Integer.parseInt(tfIdade.getText());
+            int anoAtual = Calendar.getInstance().get(Calendar.YEAR);
+            int idade = anoAtual - anoNascimento;
+            lbResultado.setText("Sua idade é: "+ idade);
+        }
     }
 }
