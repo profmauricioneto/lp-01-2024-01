@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="fundamentals" />
         <module name="gui" />
+        <module name="reviewnp1" />
         <module name="cryptographyword" />
         <module name="filemanipulationjson" />
       </profile>
