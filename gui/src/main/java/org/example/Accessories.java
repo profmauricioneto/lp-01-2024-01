@@ -52,7 +52,7 @@ public class Accessories extends JFrame {
 
         TOTAL.setText(String.valueOf(total));
 
-        setSize(200, 500);
+        setSize(300, 500);
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }

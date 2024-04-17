@@ -72,7 +72,11 @@ public class ExampleForm extends JFrame {
         @Override
         public void actionPerformed(ActionEvent e) {
             String message = txtMessage.getText();
-            lbResult.setText(message);
+            if (btnMasculino.isSelected()) {
+                lbResult.setText("Mr. :" + message);
+            } else {
+                lbResult.setText("Ms. :" + message);
+            }
         }
     }
 
