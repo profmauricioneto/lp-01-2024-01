@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 01</title>
+  </head>
+  <body>
+      <h1>Which the bigger value?</h1>
+      <label for="fvalue">First Value:</label>
+      <input type="number" id="fvalue" />
+      <br />
+      <label for="svalue">Second Value:</label>
+      <input type="number" id="svalue" />
+      <br />
+      <button onclick="biggerThan()">Click Here!</button>
+      <p id="result">...</p>
+  </body>
+
+  <script>
+    function biggerThan(){
+        var output = "the biggest number is: ";
+        var fnumber = document.getElementById("fvalue").value;
+        var snumber = document.getElementById("svalue").value;
+        var result = document.getElementById("result");
+
+        console.log(fnumber);
+        console.log(snumber);
+        if (parseInt(fnumber) > parseInt(snumber)) {
+            result.innerText = output + fnumber;
+        } else if (parseInt(fnumber) < parseInt(snumber))
+            result.innerText = output + snumber;
+        else {
+            result.innerText = "iquals";
+        }
+    }
+  </script>
+</html>

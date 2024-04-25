@@ -1,4 +1,3 @@
-
 {
     let nome = "mauricio";
     console.log(nome);
@@ -23,3 +22,14 @@ console.log(`Ei ${nameUser}
 tu ta acordado?
 Isso cai em prova hein!
 `);
+
+var message = nameUser.concat(", Hello World.")
+console.log(message);
+console.log(message.replace("Hello", "Hi"));
+
+let phrase = "O rato roeu a roupa do rei de roma";
+let arrayPhrase = phrase.split(" ");
+console.log(arrayPhrase);
+console.log(arrayPhrase[1]);
+
+console.log(4 + 3 + "5");
