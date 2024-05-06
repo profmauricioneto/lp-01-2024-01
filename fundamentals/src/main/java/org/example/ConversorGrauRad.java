@@ -19,5 +19,6 @@ public class ConversorGrauRad {
         rad = graus * (Math.PI/180);
 
         System.out.println("O valor em radianos é: " + rad);
+        scan.close();
     }
 }
