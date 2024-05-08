@@ -10,3 +10,6 @@ function encontrarMaiorValor(array) {
 
 let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 console.log(encontrarMaiorValor(myArray));
+
+let newValue = myArray.filter((value) => value % 2 === 0).reduce((acc, value) => acc + value);
+console.log(newValue);
