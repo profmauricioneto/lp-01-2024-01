@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Example</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1 class="title subtitle">Cabeçalho</h1>
+    <p class="phrase">This is an example about JavaScript</p>
+    <p class="example" style="display: none">Javascript</p>
+    <p class="example" style="display: none">is an</p>
+    <p class="example" style="display: none">Awesome</p>
+    <p class="example" style="display: none">Language</p>
+    <button onclick="showPhrase()">Show Phrase</button>
+    <button onclick="hidePhrase()">Hide Phrase</button>
+    <button onclick="showAndHide()">Show and Hide Button</button>
+    <script>
+      function showPhrase() {
+        var paragraphs = document.getElementsByClassName("example");
+        for (i = 0; i < paragraphs.length; i++) {
+          paragraphs[i].style.display = "block";
+        }
+      }
+
+      function hidePhrase() {
+        var paragraphs = document.getElementsByClassName("example");
+        for (i = 0; i < paragraphs.length; i++) {
+          paragraphs[i].style.display = "none";
+        }
+      }
+
+      function showAndHide() {
+        var paragraphs = document.getElementsByClassName("example");
+        for (i = 0; i < paragraphs.length; i++) {
+          paragraphs[i].classList.add("example2");
+          if (paragraphs[i].style.display === "block") {
+            paragraphs[i].style.display = "none";
+          } else {
+            paragraphs[i].style.display = "block";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Example</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- faca um footer que pegue toda a área da tela e que tenha resposividade com smartphones-->
+
+    <footer class="footer">
+      <p>Footer</p>
+    </footer>
+
+
+    <h1 class="title">Cabeçalho</h1>
+    <p class="phrase">This is an example about JavaScript</p>
+    <p class="example" style="display: none">Javascript</p>
+    <p class="example" style="display: none">is an</p>
+    <p class="example" style="display: none">Awesome</p>
+    <p class="example" style="display: none">Language</p>
+    <button type="button" onclick="changeButton()">Show Phrase</button>
+    <button type="button" onclick="changeButton()">Show Phrase</button>
+    <script>
+      function changeButton() {
+        var myButton = document.querySelector("[type=button]");
+        myButton.style.color = "white";
+        myButton.style.backgroundColor = "lightblue";
+      }
+    </script>
+  </body>
+</html>
