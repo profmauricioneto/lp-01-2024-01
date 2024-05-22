@@ -7,12 +7,6 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <!-- faca um footer que pegue toda a área da tela e que tenha resposividade com smartphones-->
-
-    <footer class="footer">
-      <p>Footer</p>
-    </footer>
-
 
     <h1 class="title">Cabeçalho</h1>
     <p class="phrase">This is an example about JavaScript</p>
@@ -24,9 +18,15 @@
     <button type="button" onclick="changeButton()">Show Phrase</button>
     <script>
       function changeButton() {
-        var myButton = document.querySelector("[type=button]");
-        myButton.style.color = "white";
-        myButton.style.backgroundColor = "lightblue";
+        var myButtons = document.querySelectorAll("[type=button]");
+        // for (let i = 0; i < myButtons.length; i++) {
+        //   myButtons[i].style.color = "white";
+        //   myButtons[i].style.backgroundColor = "lightblue";
+        // }
+        myButtons.forEach((b) => {
+          b.style.color = "white";
+          b.style.backgroundColor = "lightblue";
+        });
       }
     </script>
   </body>
