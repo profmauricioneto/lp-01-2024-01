@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testing Geolocation API</title>
+  </head>
+  <body>
+    <div>
+      <h2>My Geolocation API</h2>
+      <button onclick="getGeolocation()">Show Geolocation</button>
+      <div id="geolocation"></div>
+    </div>
+
+    <script>
+      const element = document.getElementById("geolocation");
+      function getGeolocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            showGeoPosition,
+            handlingError
+          );
+        } else {
+          element.innerHTML = "Geolocation API not supported by browser.";
+        }
+      }
+      function showGeoPosition(position) {
+        element.innerHTML =
+          "Lat: " +
+          position.coords.latitude +
+          "<br/> Long: " +
+          position.coords.longitude;
+      }
+      function handlingError(error) {
+        switch (error.code) {
+          case error.PERMISSION_DENIED:
+            element.innerHTML = "The sser denied the geolocation request.";
+            break;
+          case error.POSITION_UNAVAILABLE:
+            element.innerHTML = "Geolocation is unavailable";
+            break;
+          case error.TIMEOUT:
+            element.innerHTML = "Timeout to get location";
+            break;
+          case error.UNKNOWN_ERROR:
+            element.innerHTML = "An unknown error";
+            break;
+          default:
+            element.innerHTML = "Some misterious error occurs";
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>

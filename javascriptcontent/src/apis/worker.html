@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Examples Worker API</title>
+  </head>
+  <body>
+    <h2>Counter with API Worker</h2>
+    <p>Numbers: <span id="counting"></span></p>
+    <button onclick="startCount()">Start</button>
+    <button onclick="stopCount()">Stop</button>
+    <script>
+      let worker;
+      function startCount() {
+        if (typeof worker == "undefined") {
+          worker = new Worker("worker.js");
+        }
+        worker.onmessage = function (event) {
+          document.getElementById("counting").innerHTML = event.data;
+        };
+      }
+      function stopCount() {
+        worker.terminate();
+        worker = undefined;
+      }
+    </script>
+  </body>
+</html>

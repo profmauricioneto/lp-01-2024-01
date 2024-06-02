@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Navigation Time Example</title>
+  </head>
+  <body onload="onloadtime()">
+    <h1>Hello World</h1>
+    <p>
+      This is an example of text for class about Navigation Time API in JavaScript by UNICHRISTUS.
+      Fortaleza, Ceará, Brazil.
+    </p>
+    <script>
+      function onloadtime() {
+        var now = new Date().getTime();
+        var page_load_time = now - performance.timing.navigationStart;
+        console.log("Load time: " + page_load_time + "ms");
+      }
+    </script>
+  </body>
+</html>

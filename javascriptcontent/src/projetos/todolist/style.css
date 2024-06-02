@@ -1,0 +1,130 @@
+/* body: removendo toda a margem da tela e o tamanho mínimo sendo 250px */
+body {
+    margin: 0;
+    min-width: 250px;
+}
+/* Incluindo a borda e o padding no tamanho total do elemento */
+* {
+    box-sizing: border-box;
+}
+/* removendo  a margem e o padding da lista */
+ul {
+    margin: 0;
+    padding: 0;
+}
+/* cabeçalho da ToDo List */
+.header {
+    background-color: #51a2e1;
+    padding: 40px 50px;
+    color: white;
+    text-align: center;
+}
+/* limpa o float após o header */
+.header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* estilizando a entrada de dados */
+input {
+    margin: 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 14px;
+}
+/* botão de adicionar elemento */
+.addButton {
+    padding: 11px;
+    width: 25%;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #0d283e;
+    transition: 0.4s;
+}
+/* hover no botao */
+.addButton:hover {
+    background-color: #1d73b9;
+}
+/* configurando os elementos da lista */
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 10px 12px 40px;
+    list-style-type: none;
+    background-color: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* elementos da lista com cores zebradas */
+ul li:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+/* aplicando hover nos elementos da lista */
+ul li:hover {
+    background-color: #ddd;
+}
+/* adicionar um check quando o item é selecionado */
+ul li.checked {
+    background-color: rgb(90, 89, 89);
+    color: white;
+    text-decoration: line-through;
+}
+/* adicionando o símbolo de check */
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-width: 0px 3px 3px 0px;
+    border-style: solid;
+    border-color: white;
+    bottom: 0;
+    top: 10px;
+    left: 15px;
+    height: 20px;
+    width: 10px;
+    transform: rotate(45deg);
+}
+/* adicionando o botão de fechar */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 10px 12px 10px;
+}
+/* hover do close */
+.close:hover {
+    background-color: #0d283e;
+    color: white;
+}
+/* configurando o footer */
+#footer {
+    background-color: #51a2e1;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    font-size: large;
+}
+/*  */
+#footer span {
+    font-size:20px;
+}
+/*  */
+@media screen and (max-width: 600px) {
+    input {
+        width: 100%;
+    }
+    .addButton {
+        width: 100%;
+    }
+}

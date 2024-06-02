@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 200vh;
+    background-color: #C8D5B9;
+    padding: 50px;
+}
+
+main {
+    padding: 40px;
+    font-size: 15px;
+    background-color: #8FC0A9;
+    color: #F5F5F5;
+}
+
+main div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.password {
+    min-width: 280px;
+    color: #F5F5F5;
+    background-color: #68B0AB;
+}
+
+.password p {
+    padding: 6px 10px;
+}
+
+.password i {
+    padding: 6px 10px;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 10px;
+    color: #F5F5F5;
+    font-size: large;
+    background-color: #698F94;
+}
