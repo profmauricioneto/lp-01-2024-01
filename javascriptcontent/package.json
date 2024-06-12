@@ -2,7 +2,7 @@
   "name": "javascriptcontent",
   "version": "1.0.0",
   "description": "",
-  "main": "src/app.js",
+  "main": "src/node/exercicio0/app.js",
   "scripts": {
     "start": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
